@@ -1,0 +1,28 @@
+# Python virtual environment
+rf_env/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Streamlit
+.streamlit/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Optional: large datasets
+# *.csv
+
+# Optional: model artifacts
+# *.pkl
+# *.joblib
