@@ -127,7 +127,29 @@ These metrics help identify **accuracy, robustness, and generalization ability**
 
 ## 🗂️ Project Structure
 
-PATH_LOSS_PREDICTION/ │ ├── artifacts/ │ ├── all_best_models/ │ ├── best_model.joblib │ ├── feature_info.joblib │ ├── model_performance_results.xlsx │ └── preprocessor.joblib │ ├── rf_env/ # Virtual environment ├── path_loss_prediction.ipynb # Main experiment notebook ├── streamlit_app.py # Optional UI ├── Train Data.csv ├── Dataset Analysis.png ├── Feature Correlation Matrix.png ├── Model Performance Comparison.png ├── Predictions Error Analysis.png ├── Time Series Analysis.png ├── Process Flow diagram.png ├── process_flow_diagram.svg ├── requirements.txt └── readme.md
+PATH_LOSS_PREDICTION/
+├── artifacts/
+│   ├── all_best_models/
+│   ├── best_model.joblib
+│   ├── feature_info.joblib
+│   ├── model_performance_results.xlsx
+│   └── preprocessor.joblib
+│
+├── rf_env/                       # Python virtual environment
+├── path_loss_prediction.ipynb    # Main experiment notebook
+├── streamlit_app.py              # Streamlit UI (single & batch prediction)
+├── Train Data.csv                # Training dataset
+│
+├── Dataset Analysis.png
+├── Feature Correlation Matrix.png
+├── Model Performance Comparison.png
+├── Predictions Error Analysis.png
+├── Time Series Analysis.png
+├── Process Flow diagram.png
+├── process_flow_diagram.svg
+│
+├── requirements.txt
+└── readme.md
 
 ---
 
