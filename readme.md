@@ -66,7 +66,6 @@ The following regression models were trained and compared:
 - Ridge Regression  
 - LASSO Regression  
 - Elastic Net  
-- Huber Regression  
 - Random Forest Regressor  
 - Gradient Boosting Regressor  
 - XGBoost Regressor  
@@ -128,37 +127,30 @@ These metrics help identify **accuracy, robustness, and generalization ability**
 
 ## 🗂️ Project Structure
 
-PATH_LOSS_PREDICTION/
-│
-├── artifacts/
-│   ├── all_best_models/
-│   ├── best_model.joblib
-│   ├── feature_info.joblib
-│   ├── model_performance_results.xlsx
-│   └── preprocessor.joblib
-│
-├── rf_env/                     # Virtual environment
-├── path_loss_prediction.ipynb  # Main experiment notebook
-├── streamlit_app.py            # Optional UI
-├── Train Data.csv
-├── Dataset Analysis.png
-├── Feature Correlation Matrix.png
-├── Model Performance Comparison.png
-├── Predictions Error Analysis.png
-├── Time Series Analysis.png
-├── Process Flow diagram.png
-├── process_flow_diagram.svg
-├── requirements.txt
-└── readme.md
+PATH_LOSS_PREDICTION/ │ ├── artifacts/ │ ├── all_best_models/ │ ├── best_model.joblib │ ├── feature_info.joblib │ ├── model_performance_results.xlsx │ └── preprocessor.joblib │ ├── rf_env/ # Virtual environment ├── path_loss_prediction.ipynb # Main experiment notebook ├── streamlit_app.py # Optional UI ├── Train Data.csv ├── Dataset Analysis.png ├── Feature Correlation Matrix.png ├── Model Performance Comparison.png ├── Predictions Error Analysis.png ├── Time Series Analysis.png ├── Process Flow diagram.png ├── process_flow_diagram.svg ├── requirements.txt └── readme.md
 
 ---
 
-## 🖥️ Streamlit Interface (Optional)
+## 🖥️ Streamlit Application Features
 
-A Streamlit application allows:
-- Interactive input of RF parameters
-- Real-time path loss prediction
-- Visualization of results
+The Streamlit application supports two prediction modes:
+
+### 🔹 Single Prediction
+Users can manually enter RF and environmental parameters such as:
+- Signal strength
+- Distance to tower
+- Environment type
+- Attenuation and SNR
+
+The system predicts the corresponding **path loss value in real time**.
+
+### 🔹 Batch Prediction
+Users can upload a CSV file containing multiple samples.
+- The model performs predictions for all rows
+- Output is displayed as a table
+- Predicted results can be downloaded as a CSV file
+
+This enables efficient evaluation of large datasets.
 
 Run locally: streamlit run streamlit_app.py
 
@@ -173,7 +165,7 @@ Run locally: streamlit run streamlit_app.py
 
 ---
 
-## 🔮 Future Scope (8th Semester Extension)
+## 🔮 Future Scope
 
 - Deep learning models (ANN, LSTM)
 - Comparison with **3GPP theoretical path loss models**
@@ -183,18 +175,10 @@ Run locally: streamlit run streamlit_app.py
 
 ---
 
-## 🎓 Academic Relevance
+## 📌 Usage & Applicability
 
-This project demonstrates:
-- Practical RF propagation modeling
-- Applied machine learning in telecom
-- End-to-end ML system design
-- Industry-relevant evaluation techniques  
-
-Suitable for **Final Year B.Tech (ECE)** evaluation.
-
----
-
-## 📜 License
-
-This project is intended strictly for **academic and research purposes**.
+This project demonstrates practical machine learning skills applied to real-world RF and telecom data.  
+It is suitable for:
+- Academic research and learning
+- AI/ML portfolio and resume projects
+- Applied data science and regression modeling use cases
