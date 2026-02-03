@@ -127,6 +127,7 @@ These metrics help identify **accuracy, robustness, and generalization ability**
 
 ## 🗂️ Project Structure
 
+```bash
 PATH_LOSS_PREDICTION/
 ├── artifacts/
 │   ├── all_best_models/
@@ -150,6 +151,7 @@ PATH_LOSS_PREDICTION/
 │
 ├── requirements.txt
 └── readme.md
+```
 
 ---
 
